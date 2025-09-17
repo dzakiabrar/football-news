@@ -1,3 +1,14 @@
+from selenium import webdriver
+
+# Membuat instance WebDriver untuk Chrome
+driver = webdriver.Chrome()
+
+# Membuka halaman web selenium.dev
+driver.get("http://selenium.dev")
+
+# Menutup browser setelah selesai
+driver.quit()
+
 django
 gunicorn
 whitenoise
