@@ -9,6 +9,8 @@ from main.views import logout_user
 from main.views import edit_news
 from main.views import delete_news
 from main.views import add_news_entry_ajax
+from main.views import proxy_image
+from main.views import create_news_flutter
 
 app_name = 'main'
 
@@ -26,4 +28,6 @@ urlpatterns = [
     path('news/<uuid:id>/edit', edit_news, name='edit_news'),
     path('news/<uuid:id>/delete', delete_news, name='delete_news'),
     path('create-news-ajax', add_news_entry_ajax, name='add_news_entry_ajax'),
+    path('proxy-image/', proxy_image, name='proxy_image'),
+    path('create-flutter/', create_news_flutter, name='create_news_flutter'),
 ]
